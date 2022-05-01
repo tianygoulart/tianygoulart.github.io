@@ -1,0 +1,166 @@
+    @charset "UTF-8";
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        /*color: #a09038;*/
+        color: palevioletred;
+        /*color: rgb(190, 56, 190);*/
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    ul {
+        list-style: none;
+        font-style: italic;
+    }
+    
+    a {
+        text-decoration: none;
+        font-weight: 700;
+    }
+    
+    body {
+        background-image: url(./pexels-danny-meneses-943096.png);
+        background-repeat: no-repeat;
+        background-position: center center fixed;
+        background-size: 100%;
+        width: -250px;
+    }
+    
+    header {
+        display: inline-flex;
+        align-items: flex-start;
+        /*border-bottom: 1px solid #FFF;*/
+    }
+    
+    header ul {
+        display: flex;
+    }
+    
+    header ul li {
+        padding: 5px;
+        /* border-bottom: 2px dashed #FFF;*/
+    }
+    
+    header ul li a {
+        transition: 300ms
+    }
+    
+    header ul li a:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+    
+    .container {
+        text-align: center;
+        margin-top: -10%;
+    }
+    
+    .container .name h1 {
+        font-size: 40px;
+        display: flex;
+        margin-left: 20%;
+    }
+    
+    .container .name h5 {
+        font-size: 20px;
+        display: flex;
+        margin-left: 24%;
+    }
+    
+    #arrow {
+        font-size: 35px;
+        cursor: pointer;
+        animation: blink 1s steps(5, start) infinite;
+    }
+    
+    @keyframes blink {
+        to {
+            visibility: hidden;
+        }
+    }
+    
+    #about p {
+        max-width: 500px;
+        margin: 20px;
+        font-size: 10px;
+        color: burlywood;
+        text-align: justify;
+    }
+    
+    .form h3 {
+        width: 100%;
+        text-align: left;
+        margin-left: 20px;
+        font-size: 14px;
+        padding: 0.2%;
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .form p {
+        width: 40%;
+        text-align: left;
+        margin-left: 20px;
+        font-size: 15px;
+        margin-bottom: 1%;
+    }
+    
+    section #corpo {
+        display: block;
+        width: 500px;
+        float: left;
+    }
+    
+    aside#lateral {
+        display: block;
+        width: 350px;
+        float: left
+    }
+    
+    .form input {
+        width: 50%;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px 0px 0px 5px;
+    }
+    
+    .form button {
+        width: 15%;
+        padding: 5px 10px;
+        background: #c09717 50%;
+        background-size: 200% 100%;
+        background-position: right bottom;
+        color: #FFF;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: all 300ms ease-out;
+        border-radius: 0px 5px 5px 0px;
+        margin-top: 20px;
+        margin-left: -5px;
+    }
+    
+    .form h3:hover {
+        background-position: left-bottom;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .form {
+            width: 100;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .container .name h1 {
+            font-size: 30px
+        }
+        .container .name h5 {
+            font-size: 15px
+        }
+    }
+    
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
